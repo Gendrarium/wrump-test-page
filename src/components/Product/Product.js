@@ -1,7 +1,23 @@
 import productImage from '../../images/product-helix.png'
+import React from 'react';
 import './Product.css'
 
-function Product() {
+function Product({isPopupOpen, setIsPopupOpen}) {
+  const [timeOutId, setTimeOutId] = React.useState();
+
+  function handleAddProduct() {
+    setIsPopupOpen(true);
+
+    const timeOutId = setTimeout(() => {setIsPopupOpen(false)}, 3000);
+    setTimeOutId(timeOutId);
+  }
+
+  React.useEffect(()=> {
+    if (!isPopupOpen) {
+      clearTimeout(timeOutId);
+    }
+  }, [isPopupOpen])
+
   return (
     <section className="product main__product">
     <ul className="product__path">
@@ -15,18 +31,18 @@ function Product() {
         <a className="product__path-link" href="#">Двигатель</a> /
       </li>
       <li className="product__path-cell">
-        <a className="product__path-link" href="#">Винты гребные</a> /
+        <a className="product__path-link" href="#">Винты&nbsp;гребные</a> /
       </li>
-      <li className="product__path-cell product__path-cell_selected">Гребной винт 3x7.3x5, Solas, 4011-073-05S</li>
+      <li className="product__path-cell product__path-cell_selected">Гребной&nbsp;винт&nbsp;3x7.3x5,&nbsp;Solas,&nbsp;4011-073-05S</li>
     </ul>
-    <h1 className="product__title">Гребной винт 3x7.3x5, Solas, 4011-073-05S</h1>
-    <p className="product__subtitle">Артикул: 401107305S</p>
+    <h1 className="product__title">Гребной винт&nbsp;3x7.3x5,&nbsp;Solas,&nbsp;4011-073-05S</h1>
+    <p className="product__subtitle">Артикул:&nbsp;401107305S</p>
     <div className="product__container product__container_up">
       <img className="product__img" src={productImage}/>
       <div className="product__buy">
-        <h2 className="product__buy-title">Модель: 3 лопасти</h2>
-        <button className="product__button">3 лопасти</button>
-        <button className="product__button">4 лопасти</button>
+        <h2 className="product__buy-title">Модель:&nbsp;3&nbsp;лопасти</h2>
+        <button className="product__button" type="button">3&nbsp;лопасти</button>
+        <button className="product__button" type="button">4&nbsp;лопасти</button>
         <dl className="product__grid-description">
           <dt className="product__grid-description-term">OEM</dt>
           <dd className="product__grid-description-definition">3411-135-13</dd>
@@ -38,10 +54,10 @@ function Product() {
           <dd className="product__grid-description-definition">Алюминий</dd>
         </dl>
         <div className="product__price">
-          <span className="product__price-now">3&nbsp;940&nbsp;&#8381;</span>
-          <span className="product__price-old">1&nbsp;970&nbsp;&#8381;</span>
+          <span className="product__price-now">1&nbsp;970&nbsp;&#8381;</span>
+          <span className="product__price-old">3&nbsp;940&nbsp;&#8381;</span>
         </div>
-        <button className="product__buy-button">В корзину</button>
+        <button className="product__buy-button" type="button" onClick={handleAddProduct}>В&nbsp;корзину</button>
       </div>
     </div>
     <div className="product__container product__container_bottom">

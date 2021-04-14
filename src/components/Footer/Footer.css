@@ -33,14 +33,25 @@
 }
 
 .footer__form {
-  margin-top: 49px;
+  margin-top: 37px;
   min-width: 820px;
 }
 
 .footer__form-container {
-  display: flex;
+  display: grid;
+  gap: 0 27px;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   margin-bottom: 55px
+}
+
+.footer__hint {
+  min-height: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #99A6B9;
 }
 
 .footer__input {

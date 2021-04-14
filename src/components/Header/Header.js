@@ -17,10 +17,15 @@ function Header() {
         </div>
         <div className="header__container header__container_location_bottom">
           <img className="header__logo" src={logo}/>
-          <button className="header__catalog"><img className="header__buttonIcon" src={buttonCatalogIcon}/> Каталог</button>
-          <input className="header__input" placeholder="Поиск по OEM, производителю, модели и категории"/>
-          <button className="header__button header__button_type_profile"/>
-          <button className="header__button header__button_type_cart">
+          <button className="header__catalog"><img className="header__buttonIcon" src={buttonCatalogIcon}/>Каталог</button>
+          <input
+            name="search"
+            className="header__input"
+            placeholder="Поиск по OEM, производителю, модели и категории"
+            type="text"
+          />
+          <button type="button" className="header__button header__button_type_profile"/>
+          <button type="button" className="header__button header__button_type_cart">
             <div className="header__counter-container">
               <p className="header__counter">3</p>
             </div>

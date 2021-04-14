@@ -1,10 +1,13 @@
 import Product from '../Product/Product'
 import './Main.css'
 
-function Main() {
+function Main({isPopupOpen, setIsPopupOpen}) {
   return (
     <main className="main">
-      <Product/>
+      <Product
+        isPopupOpen={isPopupOpen}
+        setIsPopupOpen={setIsPopupOpen}
+      />
     </main>
   );
 }

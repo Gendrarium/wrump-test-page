@@ -3,14 +3,20 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup'
 import './App.css';
+import React from 'react';
 
 function App() {
+  const [isPopupOpen, setIsPopupOpen] = React.useState(false);
+
   return (
     <>
       <Header/>
-      <Main/>
+      <Main isPopupOpen={isPopupOpen} setIsPopupOpen={setIsPopupOpen}/>
       <Footer/>
-      <Popup/>
+      <Popup
+        isPopupOpen={isPopupOpen}
+        setIsPopupOpen={setIsPopupOpen}
+      />
     </>
   );
 }

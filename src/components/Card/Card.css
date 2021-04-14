@@ -1,0 +1,120 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  min-width: 555px;
+  min-height: 100px;
+  margin-top: 20px;
+}
+
+.card:first-of-type {
+  margin-top: 0;
+}
+
+.card__img {
+  width: 100px;
+  height: 100px;
+}
+
+.card__info {
+  max-width: 311px;
+}
+
+.card__title {
+  min-width: 311px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  color: #002051;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card__price {
+  display: flex;
+  margin: 9px 0 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #DE2F46;
+}
+
+.card__discount {
+  margin: 2px 0 0 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  text-decoration-line: line-through;
+  color: #99A6B9;
+}
+
+.card__presence {
+  margin: 11px 0 0 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  color: #002051;
+}
+
+.card__control {
+  min-width: 104px;
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__delete {
+  margin: 3px 5px 0 0;
+  width: 20px;
+  height: 24px;
+  background-image: url('../../images/card-delete.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  outline: none;
+}
+
+.card__counter-container {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #002051;
+  box-sizing: border-box;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.card__counter-button {
+  padding: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  outline: none;
+}
+
+.card__counter-button_type_add {
+  background-image: url('../../images/card-add.svg');
+}
+
+.card__counter-button_type_remove {
+  background-image: url('../../images/card-remove.svg');
+}
+
+.card__counter {
+  margin: 0;
+}
