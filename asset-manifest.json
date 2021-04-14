@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5f5fa796.chunk.css",
+    "main.js": "./static/js/main.3f0543ad.chunk.js",
+    "main.js.map": "./static/js/main.3f0543ad.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.4b6acf4c.js",
+    "runtime-main.js.map": "./static/js/runtime-main.4b6acf4c.js.map",
+    "static/js/2.a8712ef2.chunk.js": "./static/js/2.a8712ef2.chunk.js",
+    "static/js/2.a8712ef2.chunk.js.map": "./static/js/2.a8712ef2.chunk.js.map",
+    "static/js/3.e0aaadec.chunk.js": "./static/js/3.e0aaadec.chunk.js",
+    "static/js/3.e0aaadec.chunk.js.map": "./static/js/3.e0aaadec.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.5f5fa796.chunk.css.map": "./static/css/main.5f5fa796.chunk.css.map",
+    "static/js/2.a8712ef2.chunk.js.LICENSE.txt": "./static/js/2.a8712ef2.chunk.js.LICENSE.txt",
+    "static/media/index.css": "./static/media/Montserrat-SemiBold.fa8441f3.ttf",
+    "static/media/Card.css": "./static/media/card-remove.afd31d09.svg",
+    "static/media/header-button-fat-burger.ec82e546.svg": "./static/media/header-button-fat-burger.ec82e546.svg",
+    "static/media/Header.css": "./static/media/header-profile-icon.40e9eb8c.svg",
+    "static/media/header-logo.6906cf3b.svg": "./static/media/header-logo.6906cf3b.svg",
+    "static/media/product-helix.de00afda.png": "./static/media/product-helix.de00afda.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b6acf4c.js",
+    "static/js/2.a8712ef2.chunk.js",
+    "static/css/main.5f5fa796.chunk.css",
+    "static/js/main.3f0543ad.chunk.js"
+  ]
+}
