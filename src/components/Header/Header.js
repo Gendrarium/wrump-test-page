@@ -13,7 +13,7 @@ function Header() {
               <a href="#" className="header__link">Возврат</a>
               <a href="#" className="header__link">Магазин</a>
             </nav>
-            <p className="header__number">+7 495 744-00-50</p>
+            <p className="header__number">+7&nbsp;495&nbsp;744-00-50</p>
         </div>
         <div className="header__container header__container_location_bottom">
           <img className="header__logo" src={logo}/>
@@ -27,7 +27,7 @@ function Header() {
           <button type="button" className="header__button header__button_type_profile"/>
           <button type="button" className="header__button header__button_type_cart">
             <div className="header__counter-container">
-              <p className="header__counter">3</p>
+              <p className="header__counter">2</p>
             </div>
           </button>
         </div>
