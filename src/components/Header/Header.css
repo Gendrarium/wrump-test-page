@@ -1,0 +1,147 @@
+.header {
+  padding-top: 19px;
+  min-width: 1440px;
+  min-height: 113px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #EAF9FC;
+}
+
+.header__full-container {
+  max-width: 1252px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__container_location_up {
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.header__container_location_bottom {
+  align-items: center;
+}
+
+.header__number {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.header__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #002051;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.header__link:last-of-type {
+  margin-right: 0;
+}
+
+.header__logo {
+  width: 137px;
+  height: 23px;
+  margin-right: 29px;
+}
+
+.header__catalog {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  width: 127px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  background-color: #002051;
+  color: #FFF;
+  margin-right: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.header__input {
+  background-image: url("../../images/header-input-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 778px 11px;
+  padding-left: 19px;
+  border: 1px solid #002051;
+  color: #002051;
+  border-radius: 4px;
+  opacity: .7;
+  width: 813px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  box-sizing: border-box;
+  margin-right: 30px;
+}
+
+.header__input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.header__buttonIcon {
+  margin-right: 11px;
+  width: 20px;
+  height: 20px;
+}
+
+.header__button {
+  border: none;
+  background-color: #FFF;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  outline: none;
+
+}
+
+.header__button_type_profile {
+  background-image: url("../../images/header-profile-icon.svg");
+  margin-right: 30px;
+}
+
+.header__button_type_cart {
+  background-image: url("../../images/header-cart-icon.svg");
+  position: relative;
+}
+
+.header__counter-container {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #E83850;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__counter {
+  margin: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 8px;
+}
